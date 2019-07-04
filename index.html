@@ -5,6 +5,7 @@
                 <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
                 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.js"></script>
                 <style>
+                    @font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
                         @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
                      #arjsDebugUIContainer{
                              display:none;
@@ -12,9 +13,9 @@
                      .a-enter-vr-button{
                              display:none;
                      }
-                     
+
                 </style>
-                
+
 </head>
 <!-- <meta charset="UTF-8">
 <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
@@ -30,7 +31,7 @@
 
         ></a-entity>
         <!-- <a-box src="#texture"></a-box> -->
-        <a-video src="test.mp4" width="3" height="3" rotation="-90 0 0"></a-video> 
+        <a-video src="test.mp4" width="3" height="3" rotation="-90 0 0"></a-video>
     </a-marker>
     <a-marker preset="kanji">
             <a-entity
@@ -40,16 +41,28 @@
                     text="width: 4;color:black;width:10%;height:10%; value: H I J K L M N O P Q"
             ></a-entity>
     </a-marker>
+<!--    <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.a" size="1">-->
+<!--          &lt;!&ndash; <a-entity -->
+<!--                    rotation="-90 0 0"-->
+<!--                    position="6 0 0"-->
+<!--                    material="opacity:0"-->
+<!--                    text="width: 4;color:black;width:10%;height:10%;shader=msdf;font:https://raw.githubusercontent.com/myso-kr/aframe-fonts-korean/master/fonts/ofl/nanumgothic/NanumGothic-Regular.json;-->
+<!--                    value: Hello, 안녕!"-->
+<!--                    -->
+<!--            ></a-entity>  &ndash;&gt;-->
+<!--            <a-text value="Hello" width="10%" height="10%" color="#000000" shader="msdf" font="https://raw.githubusercontent.com/myso-kr/aframe-fonts-korean/master/fonts/ofl/nanumgothic/NanumGothic-Regular.json" position="0 5 0" rotation="-90 0 0"></a-text>     -->
+
+<!--    </a-marker>-->
     <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.a" size="1">
-          <!-- <a-entity 
-                    rotation="-90 0 0"
-                    position="6 0 0"
-                    material="opacity:0"
-                    text="width: 4;color:black;width:10%;height:10%;shader=msdf;font:https://raw.githubusercontent.com/myso-kr/aframe-fonts-korean/master/fonts/ofl/nanumgothic/NanumGothic-Regular.json;
-                    value: Hello, 안녕!"
-                    
-            ></a-entity>  -->
-            <a-text value="Hello" width="10%" height="10%" color="#000000" shader="msdf" font="https://raw.githubusercontent.com/myso-kr/aframe-fonts-korean/master/fonts/ofl/nanumgothic/NanumGothic-Regular.json" position="0 5 0" rotation="-90 0 0"></a-text>     
+        <a-entity
+                  rotation="-90 0 0"
+                  position="6 0 0"
+                  material="opacity:0"
+                  text="width: 4;color:black;width:10%;height:10%;shader=msdf;font:yg-jalnan;
+                  value: Hello, 안녕!"
+
+          ></a-entity>
+<!--        <a-text value="Hello" width="10%" height="10%" color="#000000" shader="msdf" font="https://raw.githubusercontent.com/myso-kr/aframe-fonts-korean/master/fonts/ofl/nanumgothic/NanumGothic-Regular.json" position="0 5 0" rotation="-90 0 0"></a-text>-->
 
     </a-marker>
     <a-marker type="pattern" url="./assets/cat.patt">
@@ -68,7 +81,7 @@
                 text="width: 4;color:black;width:10%;height:10%; value: square"
         ></a-entity>
     </a-marker>
-    
+
     <!-- <a-marker-camera type="pattern" url="./assets/openhack.patt">
         <a-entity
                 rotation="-90 0 0"
