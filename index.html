@@ -5,11 +5,15 @@
                 <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
                 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.js"></script>
                 <style>
+                        @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
                      #arjsDebugUIContainer{
                              display:none;
                      }
                      .a-enter-vr-button{
                              display:none;
+                     }
+                     a-entity{
+                             font-family: 'Hanna', sans-serif;
                      }
                 </style>
                 
@@ -41,8 +45,7 @@
                     rotation="-90 0 0"
                     position="6 0 0"
                     material="opacity:0"
-                    text="width: 4;color:black;width:10%;height:10%;shader=msdf; 
-                    font:https://raw.githubusercontent.com/myso-kr/aframe-fonts-korean/master/fonts/ofl/nanumgothic/NanumGothic-Regular.json;
+                    text="width: 4;color:black;width:10%;height:10%;shader=msdf;
                     value: Hello, 안녕!"
                     
             ></a-entity> 
