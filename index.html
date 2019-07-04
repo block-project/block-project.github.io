@@ -1,8 +1,19 @@
 <!doctype HTML>
 <html>
-<meta charset="UTF-8">
+<head>
+                <meta charset="UTF-8">
+                <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+                <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.js"></script>
+                <style>
+                     #arjsDebugUIContainerv{
+                             display:none;
+                     }   
+                </style>
+                
+</head>
+<!-- <meta charset="UTF-8">
 <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.js"></script> -->
   <body style='margin : 0px; overflow: hidden;'>
 <a-scene embedded arjs='sourceType: webcam;'>
     <a-marker preset="hiro">
